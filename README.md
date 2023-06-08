@@ -39,7 +39,7 @@ Follow these steps to deploy the application using Kubernetes:
    - Change into the project directory (`sit737-2023-t2-prac7.1p`).
    - Run the following command to build the Docker image:
      ```
-     docker build -t your-username/node-app .
+     docker build -t your-username/sit737-2023-t2-prac7.1p .
      ```
    - Wait for the image to be built.
 4. Push the Docker Image:
@@ -47,7 +47,7 @@ Follow these steps to deploy the application using Kubernetes:
    - Push the Docker image to a Docker registry accessible from your Kubernetes cluster. For example, you can use Docker Hub, Google Container Registry (GCR), or Amazon Elastic Container Registry (ECR).
    - Run the following command to push the Docker image:
      ```
-     docker push your-username/node-app
+     docker push your-username/sit737-2023-t2-prac7.1p
      ```
 5. Deploy the Application on Kubernetes:
 
@@ -56,11 +56,11 @@ Follow these steps to deploy the application using Kubernetes:
    - Change into the project directory (`sit737-2023-t2-prac7.1p`).
    - Run the following command to create the deployment:
      ```
-     kubectl apply -f deployment.yaml
+     kubectl apply -f my-app-deployment.yaml
      ```
    - Run the following command to create the service:
      ```
-     kubectl apply -f service.yaml
+     kubectl apply -f my-app-service.yaml
      ```
 6. Verify the Deployment:
 

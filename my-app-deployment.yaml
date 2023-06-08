@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: abhimanyurana/node-app:latest
+          image: abhimanyurana017/sit737-2023-t2-prac7.1p
           ports:
             - containerPort: 3000
